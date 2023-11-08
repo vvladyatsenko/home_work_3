@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <title>Contacts</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Articles</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Navigation</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="contacts_container">
+        <div class="map">
+          <div>
+            <p>Adress:</p>
+            <p class="map-adress">
+              <i>4\6 Kvitky-Osnovyanenko St., 1st floor, Kharkiv, Kharkiv
+                region.</i>
+            </p>
+          </div>
+          <div>
+            <img alt="map" src="../assets/img/map.jpeg">
+          </div>
+        </div>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Basic Information</legend>
+            <div class="form-group">
+              <label class="form-subtitle" for="name">Name:</label>
+              <input class="form-input input--capitalize" id="name" name="name" type="text"
+                placeholder="Enter your name" minlength="3" maxlength="10" autofocus>
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="phone">Contact Phone:</label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="email">Email:</label>
+              <input class="form-input" id="email" name="email" type="email" placeholder="Enter email">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Ask a Question</legend>
+            <div class="form-group">
+              <label class="form-subtitle" for="txt">Question:</label>
+              <textarea class="form-placeholder" id="txt" name="question" cols="40" rows="7"
+                placeholder="Ask your question"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Form Control Button</legend>
+            <div class="form-group">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </fieldset>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copy-item">&copy; Vladyslav Yatsenko</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Articles</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Navigation</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset class="form-wrap">
+          <legend class="form-wrap_title">#Basic Information</legend>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="name">First Name</label>
+            <input class="form-input input--capitalize" id="name" name="name" placeholder="Enter your first name"
+              type="text">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="surname">Last Name</label>
+            <input class="form-input input--capitalize" id="surname" name="surname" placeholder="Enter your last name"
+              type="text">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="email">Email</label>
+            <input class="form-input input-text" id="email" name="email" placeholder="Email" type="email">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="password">Password</label>
+            <input class="form-input" id="password" name="password" placeholder="Enter your password" type="password">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="site">Website Address</label>
+            <input class="form-input" id="site" name="site" type="text" value="mysite.name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="date">Date of Birth</label>
+            <input class="form-input" id="date" name="date" type="date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-subtitle" for="file">Upload Photo</label>
+            <input class="form-input input-text" id="file" name="file" type="file">
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form-wrap">
+          <legend class="form-wrap_title">#Gender</legend>
+          <div class="form-group-sm">
+            <input class="form-radio" id="gender-male" type="radio" name="gender" value="male">
+            <label class="form-subtitle" for="gender-male">Male</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input class="" id="gender-female" type="radio" name="gender" value="female">
+            <label class="form-subtitle" for="gender-female">Female</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-wrap">
+          <legend class="form-wrap_title">#Choose a kitchen</legend>
+
+          <div class="form-group-sm">
+            <input id="kitchen-ua" checked name="kitchen" value="ua" type="checkbox">
+            <label class="form-subtitle" for="kitchen-ua">Ukrainian</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="kitchen-uk" name="kitchen" value="uk" type="checkbox">
+            <label class="form-subtitle" for="kitchen-uk">Italian</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="kitchen-ch" name="kitchen" value="ch" type="checkbox">
+            <label class="form-subtitle" for="kitchen-ch">Polish</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="kitchen-ge" name="kitchen" value="ge" type="checkbox">
+            <label class="form-subtitle" for="kitchen-ge">Georgian</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="kitchen-gr" name="kitchen" value="gr" type="checkbox">
+            <label class="form-subtitle" for="kitchen-gr">French</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form-wrap">
+          <legend class="form-wrap_title">#Details</legend>
+          <div class="form-group">
+            <label class="form-subtitle" for="txt">About Yourself:</label>
+            <textarea class="form-placeholder" name="txt" id="txt" cols="40" rows="5"
+              placeholder="Enter information about yourself..."></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-wrap">
+          <legend class="form-wrap_title">#Actions Buttons</legend>
+          <div class="buttons">
+            <div class="form-group">
+              <button class="btn">Register</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="submit">Clear Form</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copy-item">&copy; Vladyslav Yatsenko</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
